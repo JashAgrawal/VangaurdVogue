@@ -25,7 +25,7 @@ export default function Navbar(props) {
           <div className="flex mr-3 -mt-1 border-2 border-accent rounded-full">
             <input
               type="text"
-              className="rounded-l-full py-1 px-2 focus:outline-none"
+              className="rounded-l-full text-black py-1 px-2 focus:outline-none"
             ></input>
             <button className="bg-white rounded-r-full py-1 px-2">
               <BiSearchAlt style={{ color: "black" }} size={26} />
@@ -44,7 +44,7 @@ export default function Navbar(props) {
   ];
 
   return (
-    <div className="sticky max-md:hidden top-0 border-b-2 z-[9999] border-t-2 border-accent">
+    <div className="sticky max-md:hidden top-0 border-b-2 z-[100] border-t-2 border-accent">
       <nav className="flex  justify-between font-navbar font-medium text-white bg-black">
         <div className="flex ">
           <Link href={"/"}>
@@ -70,9 +70,9 @@ export default function Navbar(props) {
 
         <ul className="flex items-center mr-6">
           {Rmenus.map((item, idx) => (
-            <Link key={idx} href={item.maproute || "/"}>
-              <li className="mx-5 cursor-pointer">{item.element}</li>
-            </Link>
+            // <Link key={idx} href={item.maproute || "/"}>
+            <li className="mx-5 cursor-pointer">{item.element}</li>
+            // </Link>
           ))}
         </ul>
       </nav>

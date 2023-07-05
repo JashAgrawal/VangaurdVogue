@@ -1,8 +1,9 @@
+import "@/styles/globals.css";
+import Cart from "@/components/Cart/CartModal";
 import Footer from "@/components/Common/Footer";
 import Navbar from "@/components/Common/Navbar";
 import SecondaryNavbar from "@/components/Common/secondaryNavbar";
 import { CartModalProvider } from "@/context/cartModel";
-import "@/styles/globals.css";
 
 export default function App({ Component, pageProps }) {
   return (
@@ -10,6 +11,7 @@ export default function App({ Component, pageProps }) {
       <CartModalProvider>
         <SecondaryNavbar />
         <Navbar />
+        <Cart />
         <Component {...pageProps} />
       </CartModalProvider>
       <Footer />

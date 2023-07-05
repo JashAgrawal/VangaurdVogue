@@ -3,19 +3,16 @@ import { createContext, useContext, useState } from "react";
 const CartModalContext = createContext();
 
 export function CartModalProvider({ children }) {
-	const [open, setOpen] = useState(false);
-	const value = { open, setOpen };
-	return (
-		<CartModalContext.Provider value={value}>
-			{children}
-		</CartModalContext.Provider>
-	);
+  const [open, setOpen] = useState(false);
+  const value = { open, setOpen };
+  return (
+    <CartModalContext.Provider value={{ open, setOpen }}>
+      {children}
+    </CartModalContext.Provider>
+  );
 }
 
 export function useCart() {
-	const context = useContext(CartModalContext);
-	if (!context) {
-		throw new Error("useCart must be used within CartModalProvider");
-	}
-	return context;
+  const { open, setOpen } = useContext(CartModalContext);
+  return { open, setOpen };
 }
