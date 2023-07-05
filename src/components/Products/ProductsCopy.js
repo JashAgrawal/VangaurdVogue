@@ -64,10 +64,10 @@ export default function Productssss() {
 					<FiltersSection />
 				</div>
 				<div className=" max-h-[79vh] col-span-9 overflow-auto">
-					<div className="flex justify-evenly flex-wrap overflow-auto">
-						{Products.map((product) => (
+					<div className="grid gap-2 mx-2 grid-cols-3">
+						{Products.map((product,idx) => (
 							<>
-								<Card product={product} />
+								<Card key={idx} product={product} />
 							</>
 						))}
 					</div>

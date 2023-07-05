@@ -7,7 +7,7 @@ export default function Card({ product }) {
 	return (
 		<Link href={"/Product/123"}>
 			<div
-				className={`lg:w-full mb-4 shrink-0 overflow-hidden max-lg:w-40 flex flex-col justify-center items-center relative my-1 max-w-xs shadow-lg border-accent shadow-accent rounded-md bg-black`}
+				className={`lg:w-full mb-4 shrink-0 overflow-hidden max-lg:w-36 flex flex-col justify-center items-center relative my-1 max-w-xs shadow-lg border-accent shadow-accent rounded-md bg-black`}
 			>
 				<div className="overflow-hidden w-full mb-4">
 					<Image

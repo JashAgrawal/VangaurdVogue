@@ -47,7 +47,7 @@ export default function FiltersSection() {
 						value={price}
 						onChange={(e) => setPrice(e.target.value)}
 						step="100"
-						class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700"
+						className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700"
 					/>
 					<div className="text-lg mt-2 text-center w-full">
 						Below Rs{" "}

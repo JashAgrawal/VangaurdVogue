@@ -12,10 +12,10 @@ export default function Review() {
 				HAPPY CUSTOMERS
 			</h1>
 
-			<figure class="max-w-screen-md mx-auto text-center">
+			<figure className="max-w-screen-md mx-auto text-center">
 				<svg
 					aria-hidden="true"
-					class="w-12 h-12 mx-auto mb-3 text-gray-400 dark:text-gray-600"
+					className="w-12 h-12 mx-auto mb-3 text-gray-400 dark:text-gray-600"
 					viewBox="0 0 24 27"
 					fill="none"
 					xmlns="http://www.w3.org/2000/svg"
@@ -26,19 +26,19 @@ export default function Review() {
 					/>
 				</svg>
 				<blockquote>
-					<p class="text-2xl italic font-medium text-gray-900 dark:text-white">
+					<p className="text-2xl italic font-medium text-gray-900 dark:text-white">
 						{'"'}VangaurdVogue™ is just awesome. It contains tons of awesome
 						designed clothes and Hoodies starting from Rs 400 to Rs 2000.
 						Perfect choice for your next anime buy.{'"'}
 					</p>
 				</blockquote>
-				<figcaption class="flex items-center justify-center mt-6 space-x-3">
-					<Image alt="profile" class="w-6 h-6 rounded-full" src={l3} />
-					<div class="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
-						<cite class="pr-3 font-medium text-gray-900 dark:text-white">
+				<figcaption className="flex items-center justify-center mt-6 space-x-3">
+					<Image alt="profile" className="w-6 h-6 rounded-full" src={l3} />
+					<div className="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
+						<cite className="pr-3 font-medium text-gray-900 dark:text-white">
 							Jash Agrawal
 						</cite>
-						<cite class="pl-3 text-sm font-light text-gray-500 dark:text-gray-400">
+						<cite className="pl-3 text-sm font-light text-gray-500 dark:text-gray-400">
 							CEO at VangaurdVogue™
 						</cite>
 					</div>

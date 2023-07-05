@@ -5,14 +5,14 @@ import { CartModalProvider } from "@/context/cartModel";
 import "@/styles/globals.css";
 
 export default function App({ Component, pageProps }) {
-	return (
-		<div className="flex bg-black text-white font-navbar flex-col justify-start">
-			<SecondaryNavbar />
-			<Navbar />
-			<CartModalProvider>
-				<Component {...pageProps} />
-			</CartModalProvider>
-			<Footer />
-		</div>
-	);
+  return (
+    <div className="flex noScroll bg-black text-white font-navbar flex-col justify-start">
+      <CartModalProvider>
+        <SecondaryNavbar />
+        <Navbar />
+        <Component {...pageProps} />
+      </CartModalProvider>
+      <Footer />
+    </div>
+  );
 }

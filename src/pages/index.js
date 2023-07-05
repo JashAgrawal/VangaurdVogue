@@ -11,7 +11,7 @@ export default function Home() {
 				primaryHeading="Shop by Anime"
 				secondaryHeading="Top Collection"
 			/>
-			{/* <MessageBanner /> */}
+			<MessageBanner />
 			<ProductsSection
 				isCategory={true}
 				primaryHeading="Shop by Category"

@@ -9,7 +9,7 @@ export default function OrdersHistory() {
 			name: "Throwback Hip Bag",
 			href: "#",
 			color: "Salmon",
-			price: "90.00",
+			price: "$90.00",
 			category: "Tshirts",
 			quantity: 1,
 			avgReview: 4.3,
