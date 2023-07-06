@@ -1,10 +1,10 @@
 import React from "react";
-import Productssss from "@/components/Products/ProductsCopy";
+import ProductsPage from "@/components/Products/ProductsPage";
 
 export default function Products() {
-	return (
-		<div>
-			<Productssss />
-		</div>
-	);
+  return (
+    <div>
+      <ProductsPage />
+    </div>
+  );
 }

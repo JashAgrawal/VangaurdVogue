@@ -5,9 +5,10 @@ import { FaUserAlt, FaShoppingCart } from "react-icons/fa";
 import Image from "next/image";
 import Link from "next/link";
 import { useCart } from "@/context/cartModel";
-
+import { CiLogin } from "react-icons/ci";
 export default function Navbar(props) {
   const { open, setOpen } = useCart();
+  const isLogin = true;
   const Lmenus = [
     {
       title: "Tshirts / Shirts",
@@ -17,18 +18,18 @@ export default function Navbar(props) {
     { title: "Bottoms", maproute: "/Product/Products" },
     { title: "Categories", maproute: "/Categories/Category" },
   ];
-  const Rmenus = [
+  const RmenusAfterLogin = [
     {
-      maproute: "/",
       element: (
         <>
-          <div className="flex mr-3 -mt-1 border-2 border-accent rounded-full">
+          <div className="w-full flex flex-row-reverse mr-3 py-2 text-sm border-b border-accent">
             <input
               type="text"
-              className="rounded-l-full text-black py-1 px-2 focus:outline-none"
+              placeholder="What are you looking for ?"
+              className="w-full text-white  px-2 focus:outline-none bg-black"
             ></input>
-            <button className="bg-white rounded-r-full py-1 px-2">
-              <BiSearchAlt style={{ color: "black" }} size={26} />
+            <button className="bg-black ">
+              <BiSearchAlt className="text-gray-400" size={20} />
             </button>
           </div>
         </>
@@ -39,9 +40,43 @@ export default function Navbar(props) {
       maproute: "/User/Profile",
     },
     {
-      element: <FaShoppingCart onClick={() => setOpen(true)} size={26} />,
+      element: (
+        <FaShoppingCart
+          className="cursor-pointer"
+          onClick={() => setOpen(!open)}
+          size={26}
+        />
+      ),
     },
   ];
+  const RmenusBeforeLogin = [
+    {
+      element: (
+        <>
+          <div className="w-full flex flex-row-reverse mr-3 py-2 text-sm border-b border-accent">
+            <input
+              type="text"
+              placeholder="What are you looking for ?"
+              className="w-full text-white  px-2 focus:outline-none bg-black"
+            ></input>
+            <button className="bg-black ">
+              <BiSearchAlt className="text-gray-400" size={20} />
+            </button>
+          </div>
+        </>
+      ),
+    },
+    {
+      element: (
+        <div className="flex space-x-2 items-center border px-4 py-2 border-accent text-accent hover:bg-accent hover:text-black">
+          <CiLogin size={20} strokeWidth={1.3} />
+          <p className="font-bold">Login</p>
+        </div>
+      ),
+      maproute: "/Auth/Login",
+    },
+  ];
+  const Rmenus = isLogin ? RmenusAfterLogin : RmenusBeforeLogin;
 
   return (
     <div className="sticky max-md:hidden top-0 border-b-2 z-[100] border-t-2 border-accent">
@@ -70,9 +105,9 @@ export default function Navbar(props) {
 
         <ul className="flex items-center mr-6">
           {Rmenus.map((item, idx) => (
-            // <Link key={idx} href={item.maproute || "/"}>
-            <li className="mx-5 cursor-pointer">{item.element}</li>
-            // </Link>
+            <Link key={idx} href={item.maproute || "/"}>
+              <li className="mx-5 cursor-pointer">{item.element}</li>
+            </Link>
           ))}
         </ul>
       </nav>

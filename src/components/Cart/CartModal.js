@@ -55,7 +55,7 @@ const products = [
 
 export default function Cart(props) {
   const { open, setOpen } = useCart();
-  console.log(open, setOpen);
+
   // const [open, setOpen] = useState(false);
 
   return (

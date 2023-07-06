@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 import Image from "next/image";
-import bg from "../../assests/d.jpeg";
+import bg from "../../assests/goku-super.gif";
 import Link from "next/link";
 export default function Banner(props) {
   const Images = [bg, bg, bg];
@@ -17,14 +17,18 @@ export default function Banner(props) {
         showThumbs={false}
       >
         {Images.map((image, idx) => (
-          <div className="relative w-full h-full" key={idx}>
-            <Image alt="ad" className="lg:h-[80vh] object-cover" src={image} />
+          <div className="relative w-full h-full bg-white" key={idx}>
+            <Image
+              alt="ad"
+              className="lg:h-[85vh] object-cover opacity-90"
+              src={image}
+            />
             <div className="absolute shadow-white font-extrabold text-accent flex flex-col text-left justify-center px-20 items-start top-0 left-0 w-full h-full text-4xl lg:text-9xl">
-              <p className="[text-shadow:_0_4px_4px_rgb(0_0_0_/_40%)]">
+              <p className="[text-shadow:_10px_10px_2px_rgb(0_0_0_/_40%)]">
                 VANGAURD <br />
                 VOGUE
               </p>
-              <button className="border border-gray-400 bg-black text-xl mt-6 lg:mt-16 py-2 px-6">
+              <button className="border border-gray-400 bg-black text-xl mt-6 lg:mt-16 py-2 px-6 hover:bg-accent hover:text-black duration-300 ease-in-out ">
                 Shop Now
               </button>
             </div>
