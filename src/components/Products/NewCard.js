@@ -12,7 +12,7 @@ const NewCard = ({ product }) => {
         <Image
           src={product.imageSrc}
           className="ease-in-out w-full h-full lg:hover:scale-[1.10] duration-500 object-center object-cover"
-          alt={product.imageAlt}
+          alt={product.imageAlt || "Product Image"}
         />
       </div>
       <div>

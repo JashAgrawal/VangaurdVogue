@@ -16,7 +16,7 @@ export default function ReviewMessage(props) {
               <Image
                 className="mr-6 w-12 h-12 p-1 border border-accent rounded-full mb-1"
                 src={l3}
-                alt=""
+                alt="Profile"
               />
               <h4 className="w-full md:w-auto text-xl font-heading font-medium">
                 {props.name}

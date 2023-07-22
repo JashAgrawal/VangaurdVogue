@@ -37,8 +37,8 @@ export default function Productssss() {
         Shop By Category
       </h1>
       <div className="px-16 grid grid-cols-3 gap-8">
-        {Category.map((category) => (
-          <CategoryCard product={category} />
+        {Category.map((category, idx) => (
+          <CategoryCard key={idx} product={category} />
         ))}
       </div>
     </div>

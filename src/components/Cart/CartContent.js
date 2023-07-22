@@ -33,7 +33,7 @@ const CartContent = (props) => {
                     <div className="h-24 w-24 flex-shrink-0 overflow-hidden rounded-md border border-gray-200">
                       <Image
                         src={product.imageSrc}
-                        alt={product.imageAlt}
+                        alt={product.imageAlt || "Product Image"}
                         className="h-full w-full object-cover object-center"
                       />
                     </div>

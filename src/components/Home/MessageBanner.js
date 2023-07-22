@@ -1,11 +1,14 @@
 import React from "react";
-import bb from "../../assests/d.jpeg";
 import Image from "next/image";
+import { messageBannerBackgroundImage } from "@/utils/constant";
 export default function MessageBanner(props) {
-  const banner = bb;
   return (
     <div className="flex relative max-w-screen-xl h-4/5 text-accent font-bold w-full items-center justify-center">
-      <Image src={bb} className="w-full h-full absolute top-0 left-0" />
+      <Image
+        src={messageBannerBackgroundImage}
+        className="w-full h-full absolute top-0 left-0"
+        alt="banner Background Image"
+      />
       <div className="flex flex-col w-full h-full p-2 my-20 justify-center items-center z-10">
         <h3 className="bg-black p-4 text-3xl">ONGOING OFFER</h3>
         <div className="m-4 text-4xl mb-8 flex flex-col justify-center items-center">

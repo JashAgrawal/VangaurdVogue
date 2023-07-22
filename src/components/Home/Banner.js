@@ -23,7 +23,7 @@ export default function Banner(props) {
         {bannerImages.map((image, idx) => (
           <div className="relative w-full h-full bg-white" key={idx}>
             <Image
-              alt="ad"
+              alt="banner Image"
               className="lg:h-[85vh] object-cover opacity-90"
               src={image}
             />

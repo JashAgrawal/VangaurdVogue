@@ -17,9 +17,7 @@ export default function ProductsPage() {
         <div className=" max-h-[79vh] col-span-9 overflow-auto noScroll">
           <div className="grid gap-2 mx-2 grid-cols-3">
             {products.map((product, idx) => (
-              <>
-                <NewCard key={idx} product={product} />
-              </>
+              <NewCard key={idx} product={product} />
             ))}
           </div>
         </div>

@@ -2,14 +2,22 @@ import React from "react";
 import CategoryCard from "../Home/CategoryCard";
 import NewCard from "./NewCard";
 import Image from "next/image";
-import { BgImage, categories, products } from "@/utils/constant";
+import {
+  ProductsSectionBackgroundImage,
+  categories,
+  products,
+} from "@/utils/constant";
 export default function ProductsSection(props) {
   const ToMap = props.isCategory ? categories : products;
   // const limit = screen.width >= 640 ? (props.isCategory ? 3 : 4) : 2;
   const limit = 4;
   return (
     <div className={`flex relative w-full flex-col justify-center`}>
-      <BgImage />
+      <Image
+        src={ProductsSectionBackgroundImage}
+        className="absolute w-full h-full top-0 left-0 opacity-20"
+        alt="background Image"
+      />
       <div className={`flex lg:my-4 p-4 w-full flex-col items-center`}>
         {props.secondaryHeading !== "" && (
           <h3 className="text-lg z-20 lg:text-2xl mb-2 lg:mb-4 m-2">
@@ -23,13 +31,13 @@ export default function ProductsSection(props) {
       </div>
       <div className="flex z-20 mx-2 my-4 max-h-[15rem] lg:max-h-[30rem] space-x-4 overflow-y-hidden md:overflow-x-hidden justify-start lg:justify-evenly">
         {ToMap.slice(0, limit).map((product, idx) => (
-          <>
+          <div key={idx}>
             {props.isCategory ? (
-              <CategoryCard key={idx} product={product} />
+              <CategoryCard product={product} />
             ) : (
-              <NewCard key={idx} product={product} />
+              <NewCard product={product} />
             )}
-          </>
+          </div>
         ))}
       </div>
     </div>

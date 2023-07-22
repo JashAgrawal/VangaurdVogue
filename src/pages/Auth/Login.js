@@ -1,9 +1,9 @@
 import React from "react";
-import logo from "../../assests/char.png";
 import { FcGoogle } from "react-icons/fc";
 import bgBlack from "../../assests/download.gif";
 import Image from "next/image";
 import Link from "next/link";
+import { logo, shortLogo, title } from "@/utils/constant";
 function Login() {
   return (
     <div>
@@ -13,6 +13,7 @@ function Login() {
             <Image
               src={bgBlack}
               className="absolute w-full h-full top-0 object-cover object-center"
+              alt="Login BackGround Image"
             />
             <div className="absolute bg-black opacity-40 inset-0 z-0"></div>
             <div className="w-full font-extrabold px-24 z-10 text-black ">
@@ -45,13 +46,21 @@ function Login() {
             <div className="w-full  py-1 z-20">
               <h1 className="my-3">
                 <div className="flex justify-start items-center">
-                  <Image src={logo} className="h-36 " alt="logo"></Image>
+                  <Image
+                    src={shortLogo || logo}
+                    className="h-36 "
+                    alt="logo"
+                  ></Image>
                   <div
                     id="heading"
                     className="flex -ml-8 text-3xl font-extrabold items-start"
                   >
-                    <h1 className="text-6xl mr-2">Vangaurd</h1>
-                    <h3 className="text-6xl text-accent">Vogue</h3>
+                    <h1 className="text-6xl mr-2">
+                      {title.toLocaleUpperCase().split(" ")[0]}
+                    </h1>
+                    <h3 className="text-6xl text-accent">
+                      {title.toLocaleUpperCase().split(" ")[1] || ""}
+                    </h3>
                   </div>
                 </div>
               </h1>

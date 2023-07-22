@@ -10,7 +10,7 @@ export default function CategoryCard({ product }) {
           <Image
             className="hover:scale-[1.1] w-full h-full ease-in-out duration-200 object-cover"
             src={product.image}
-            alt="product"
+            alt="Category Image"
           />
         </div>
       </Link>

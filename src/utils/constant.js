@@ -6,13 +6,17 @@ import l3 from "@/assests/l3.png";
 import bg from "@/assests/goku-super.gif";
 import { hexToRgb } from "./helper";
 import smoke from "@/assests/iykyk/smokebg.jpg";
-import Image from "next/image";
 import secondaryLogoImg from "@/assests/char.png";
+import bb from "@/assests/d.jpeg";
+
+//*******Constants*******//
+
 export const logo = logoImg;
 export const shortLogo = secondaryLogoImg;
 export const title = "Vangaurd Vogue";
 export const titleLink = "#";
 export const accent = "#b91c1c";
+export const messageBannerBackgroundImage = bb;
 export const Orderdproducts = [
   {
     id: 1,
@@ -149,30 +153,5 @@ export const LeftNavbarTitles = [
 export const bannerImages = [bg, bg, bg];
 export const shopNowBannerPosition = "start";
 export const rgbOfAccent = hexToRgb(accent);
-
-export const BgImage = () => {
-  return (
-    <Image
-      src={smoke}
-      className="absolute w-full h-full top-0 left-0 opacity-20"
-    />
-  );
-};
-export const NavbarSearchBar = () => {
-  return (
-    <>
-      <div className="w-full flex flex-row-reverse mr-3 py-2 text-sm border-b border-accent">
-        <input
-          type="text"
-          placeholder="What are you looking for ?"
-          className="w-full text-white  px-2 focus:outline-none bg-black"
-        ></input>
-        <button className="bg-black ">
-          <BiSearchAlt className="text-gray-400" size={20} />
-        </button>
-      </div>
-    </>
-  );
-};
-
+export const ProductsSectionBackgroundImage = smoke;
 // export const accent = "#499b4a";

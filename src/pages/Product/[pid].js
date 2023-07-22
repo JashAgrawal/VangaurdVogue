@@ -18,7 +18,7 @@ export default function ProductDescription(props) {
         <div className="container px-5 py-8 mx-auto">
           <div className="lg:w-full  mx-auto flex flex-wrap">
             <Image
-              alt="ecommerce"
+              alt="Product Image"
               className="lg:w-1/2 w-full object-cover object-center rounded border border-gray-200"
               src={ts}
             />
