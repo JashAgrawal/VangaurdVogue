@@ -2,57 +2,8 @@ import React, { useState } from "react";
 import ts from "../../assests/ts.webp";
 import FiltersSection from "./FiltersSection";
 import NewCard from "./NewCard";
+import { products } from "@/utils/constant";
 export default function ProductsPage() {
-  const Products = [
-    {
-      image: ts,
-      name: "Men's Black The Ghost Graphic Printed Oversized T-shirt",
-      price: 649,
-      color: "purple",
-    },
-    {
-      image: ts,
-      name: "Men's Black The Ghost Graphic Printed Oversized T-shirt",
-      price: 649,
-      color: "red",
-    },
-    {
-      image: ts,
-      name: "Men's Black The Ghost Graphic Printed Oversized T-shirt",
-      price: 649,
-      color: "purple",
-    },
-    {
-      image: ts,
-      name: "Men's Black The Ghost Graphic Printed Oversized T-shirt",
-      price: 649,
-      color: "purple",
-    },
-    {
-      image: ts,
-      name: "Men's Black The Ghost Graphic Printed Oversized T-shirt",
-      price: 649,
-      color: "purple",
-    },
-    {
-      image: ts,
-      name: "Men's Black The Ghost Graphic Printed Oversized T-shirt",
-      price: 649,
-      color: "purple",
-    },
-    {
-      image: ts,
-      name: "Men's Black The Ghost Graphic Printed Oversized T-shirt",
-      price: 649,
-      color: "purple",
-    },
-    {
-      image: ts,
-      name: "Men's Black The Ghost Graphic Printed Oversized T-shirt",
-      price: 649,
-      color: "purple",
-    },
-  ];
   return (
     <>
       <div className="w-full text-3xl mb-3 my-2 text-center">
@@ -65,7 +16,7 @@ export default function ProductsPage() {
         </div>
         <div className=" max-h-[79vh] col-span-9 overflow-auto noScroll">
           <div className="grid gap-2 mx-2 grid-cols-3">
-            {Products.map((product, idx) => (
+            {products.map((product, idx) => (
               <>
                 <NewCard key={idx} product={product} />
               </>
@@ -76,7 +27,7 @@ export default function ProductsPage() {
       {/* Mobile View */}
       <div className="lg:hidden block  overflow-hidden">
         <div className="grid gap-2 mx-2 grid-cols-2">
-          {Products.map((product, idx) => (
+          {products.map((product, idx) => (
             <div key={idx}>
               <NewCard product={product} />
             </div>

@@ -1,39 +1,34 @@
 import React from "react";
-import logo from "../../assests/logo.png";
 import { BiSearchAlt } from "react-icons/bi";
 import { FaUserAlt, FaShoppingCart } from "react-icons/fa";
 import Image from "next/image";
 import Link from "next/link";
 import { useCart } from "@/context/cartModel";
 import { CiLogin } from "react-icons/ci";
+import { LeftNavbarTitles, logo } from "@/utils/constant";
+const NavbarSearchBar = () => {
+  return (
+    <>
+      <div className="w-full flex flex-row-reverse mr-3 py-2 text-sm border-b border-accent">
+        <input
+          type="text"
+          placeholder="What are you looking for ?"
+          className="w-full text-white  px-2 focus:outline-none bg-black"
+        ></input>
+        <button className="bg-black ">
+          <BiSearchAlt className="text-gray-400" size={20} />
+        </button>
+      </div>
+    </>
+  );
+};
 export default function Navbar(props) {
   const { open, setOpen } = useCart();
   const isLogin = true;
-  const Lmenus = [
-    {
-      title: "Tshirts / Shirts",
-      maproute: "/Product/Products",
-    },
-    { title: "Hoodies", maproute: "/Product/Products" },
-    { title: "Bottoms", maproute: "/Product/Products" },
-    { title: "Categories", maproute: "/Categories/Category" },
-  ];
+
   const RmenusAfterLogin = [
     {
-      element: (
-        <>
-          <div className="w-full flex flex-row-reverse mr-3 py-2 text-sm border-b border-accent">
-            <input
-              type="text"
-              placeholder="What are you looking for ?"
-              className="w-full text-white  px-2 focus:outline-none bg-black"
-            ></input>
-            <button className="bg-black ">
-              <BiSearchAlt className="text-gray-400" size={20} />
-            </button>
-          </div>
-        </>
-      ),
+      element: <NavbarSearchBar />,
     },
     {
       element: <FaUserAlt size={26} />,
@@ -49,22 +44,10 @@ export default function Navbar(props) {
       ),
     },
   ];
+
   const RmenusBeforeLogin = [
     {
-      element: (
-        <>
-          <div className="w-full flex flex-row-reverse mr-3 py-2 text-sm border-b border-accent">
-            <input
-              type="text"
-              placeholder="What are you looking for ?"
-              className="w-full text-white  px-2 focus:outline-none bg-black"
-            ></input>
-            <button className="bg-black ">
-              <BiSearchAlt className="text-gray-400" size={20} />
-            </button>
-          </div>
-        </>
-      ),
+      element: <NavbarSearchBar />,
     },
     {
       element: (
@@ -84,12 +67,12 @@ export default function Navbar(props) {
         <div className="flex ">
           <Link href={"/"}>
             <div>
-              <Image alt="logo" src={logo} className="h-16 mt-1 w-48" />
+              <Image alt="logo" src={logo} className="h-16 w-auto mt-1" />
             </div>
           </Link>
 
           <ul className="flex h-full items-center">
-            {Lmenus.map((item, idx) => (
+            {LeftNavbarTitles.map((item, idx) => (
               <Link key={idx} href={item.maproute || "/"}>
                 <p className="relative mx-4 w-max one cursor-pointer">
                   <span className="text-lg">{item?.title}</span>

@@ -47,7 +47,7 @@ export default function OrderHistoryCard(props) {
           <p className="md:text-lg text-gray-500 border-b border-accent text-base">
             Order Id :- <span className="text-gray-400">{orderId}</span>
           </p>
-          <p className="text-xl font-black text-gray-200">{price}</p>
+          <p className="text-xl font-black text-gray-200">$ {price}</p>
         </div>
       </div>
     </div>

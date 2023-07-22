@@ -10,21 +10,8 @@ import ReviewMessage from "../../components/ProductDescription/ReviewMessage";
 import Image from "next/image";
 import ts from "../../assests/ts.webp";
 import WriteReview from "@/components/ProductDescription/WriteReview";
+import { reviews } from "@/utils/constant";
 export default function ProductDescription(props) {
-  const reviews = [
-    {
-      name: "jash Agrawal",
-      message: "best product ever",
-      date: Date.now(),
-      review: 5.0,
-    },
-    {
-      name: "jash Agrawal",
-      message: "best product ever",
-      date: Date.now(),
-      review: 5.0,
-    },
-  ];
   return (
     <div>
       <section className="body-font overflow-hidden text-white bg-black">
