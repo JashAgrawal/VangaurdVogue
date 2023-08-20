@@ -28,7 +28,7 @@ export default function Banner(props) {
               src={image}
             />
             <div className="absolute shadow-white font-extrabold text-accent flex flex-col text-left justify-center px-20 items-start top-0 left-0 w-full h-full text-4xl lg:text-9xl">
-              <p
+              {/* <p
                 style={{
                   textShadow: `10px 10px 2px rgb(${rgbOfAccent.r},${rgbOfAccent.g},${rgbOfAccent.b},1.0)`,
                 }}
@@ -38,13 +38,13 @@ export default function Banner(props) {
                 <span className="text-accent [text-shadow:_10px_10px_2px_rgb(0_0_0_/_100%)]">
                   {title.toLocaleUpperCase().split(" ")[1] || ""}
                 </span>
-              </p>
-              {/* <p className="text-[15rem] rotate-12 [text-shadow:_10px_10px_2px_rgb(73_155_74_/_100%)] text-black">
+              </p> */}
+              <p className="text-[15rem] rotate-12 [text-shadow:_10px_10px_2px_rgb(73_155_74_/_100%)] text-black">
                 Weed <br />
               </p>
               <span className="text-accent ml-auto -rotate-12 [text-shadow:_10px_10px_2px_rgb(0_0_0_/_100%)]">
                 Bros
-              </span> */}
+              </span>
               <div
                 className={`w-full flex justify-${
                   shopNowBannerPosition || "start"
