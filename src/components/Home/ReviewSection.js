@@ -8,7 +8,7 @@ export default function Review() {
 			<h3 className="text-lg lg:text:xl text-center mb-4 m-2">
 				LET{"'"}S HEAR FROM OUR
 			</h3>
-			<h1 className="text-3xl lg:text-6xl p-4 rounded text-center bg-accent font-extrabold text-black m-2">
+			<h1 className="text-2xl lg:text-6xl py-4 w-full text-center bg-accent font-extrabold text-black my-2">
 				HAPPY CUSTOMERS
 			</h1>
 
@@ -26,7 +26,7 @@ export default function Review() {
 					/>
 				</svg>
 				<blockquote>
-					<p className="text-2xl italic font-medium text-gray-900 dark:text-white">
+					<p className="lg:text-2xl italic font-medium text-gray-900 dark:text-white">
 						{'"'}VangaurdVogue™ is just awesome. It contains tons of awesome
 						designed clothes and Hoodies starting from Rs 400 to Rs 2000.
 						Perfect choice for your next anime buy.{'"'}

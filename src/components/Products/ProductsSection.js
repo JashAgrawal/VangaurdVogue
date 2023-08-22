@@ -12,12 +12,14 @@ export default function ProductsSection(props) {
   // const limit = screen.width >= 640 ? (props.isCategory ? 3 : 4) : 2;
   const limit = 4;
   return (
-    <div className={`flex relative w-full flex-col justify-center`}>
-      <Image
+    <div className={`flex relative w-full h-full flex-col justify-center`}>
+      <div className="absolute w-full h-full top-[10%] left-0 gradient-bg bg-opacity-20" style={{top:props.secondaryHeading ? "12%" : 0}}>
+      {/* <Image
         src={ProductsSectionBackgroundImage}
-        className="absolute w-full h-full top-0 left-0 opacity-20"
+        className="w-full h-full object-cover"
         alt="background Image"
-      />
+        /> */}
+        </div>
       <div className={`flex lg:my-4 p-4 w-full flex-col items-center`}>
         {props.secondaryHeading !== "" && (
           <h3 className="text-lg z-20 lg:text-2xl mb-2 lg:mb-4 m-2">
@@ -29,7 +31,7 @@ export default function ProductsSection(props) {
           {props.primaryHeading}
         </h1>
       </div>
-      <div className="flex z-20 mx-2 my-4 max-h-[15rem] lg:max-h-[30rem] space-x-4 overflow-y-hidden md:overflow-x-hidden justify-start lg:justify-evenly">
+      <div className="flex z-20 mx-2 my-4 space-x-4 overflow-y-hidden md:overflow-x-hidden justify-start lg:justify-evenly">
         {ToMap.slice(0, limit).map((product, idx) => (
           <div key={idx}>
             {props.isCategory ? (

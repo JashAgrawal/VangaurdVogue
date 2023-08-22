@@ -11,7 +11,7 @@ module.exports = {
         navbar: ["Oswald"],
       },
       colors: {
-        accent: "#499b4a ",
+        accent: "#b91c1c ",
       },
     },
   },

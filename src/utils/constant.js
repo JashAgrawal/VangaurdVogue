@@ -1,6 +1,6 @@
 import logoImg from "@/assests/logo.png";
-// import ts from "@/assests/ts.webp";
-import ts from "@/assests/iykyk/weed.jpeg"
+import ts from "@/assests/ts.webp";
+// import ts from "@/assests/iykyk/weed.jpeg"
 import l1 from "@/assests/l1.png";
 import l2 from "@/assests/l2.png";
 import l3 from "@/assests/l3.png";
@@ -11,9 +11,12 @@ import smoke from "@/assests/iykyk/smokebg.jpg";
 import secondaryLogoImg from "@/assests/char.png";
 import bb from "@/assests/d.jpeg";
 import LogoWb from '@/assests/iykyk/logo.jpg'
+import banner from "@/assests/img.png"
+import banner2 from "@/assests/imgg.jpeg"
+import banner3 from "@/assests/imggg.jpeg"
 //*******Constants*******//
 
-export const logo = LogoWb;
+export const logo = logoImg;
 export const shortLogo = secondaryLogoImg;
 export const title = "Vangaurd Vogue";
 export const titleLink = "#";
@@ -152,7 +155,7 @@ export const LeftNavbarTitles = [
   { title: "Categories", maproute: "/Categories/Category" },
 ];
 
-export const bannerImages = [snop, snop, snop];
+export const bannerImages = [banner, banner2, banner3];
 export const shopNowBannerPosition = "start";
 export const rgbOfAccent = hexToRgb(accent);
 export const ProductsSectionBackgroundImage = smoke;

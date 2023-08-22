@@ -6,6 +6,7 @@ import Review from "@/components/Home/ReviewSection";
 export default function Home() {
   return (
     <>
+   
       <Banner />
       <ProductsSection
         primaryHeading="Shop by Weed"

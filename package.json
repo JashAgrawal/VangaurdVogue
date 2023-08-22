@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@react-three/drei": "^9.80.4",
+    "@react-three/fiber": "^8.13.7",
     "autoprefixer": "10.4.14",
     "eslint": "8.37.0",
     "eslint-config-next": "13.3.0",
@@ -20,7 +22,9 @@
     "react-icons": "^4.8.0",
     "react-responsive-carousel": "^3.2.23",
     "react-reveal": "^1.2.2",
+    "react-three-fiber": "^6.0.13",
     "sharp": "^0.32.4",
-    "tailwindcss": "3.3.1"
+    "tailwindcss": "3.3.1",
+    "three": "^0.155.0"
   }
 }
