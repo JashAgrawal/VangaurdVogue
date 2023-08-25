@@ -22,11 +22,12 @@ export default function Banner(props) {
       >
         {bannerImages.map((image, idx) => (
           <div className="relative w-full h-full bg-[#0e0e0f]" key={idx}>
-            <div className="flex w-full h-full lg:h-[85vh] justify-between items-center">
+            <div className="flex w-full lg:h-[85vh] h-[35vh] justify-between items-center">
               <Image
                 alt="banner Image"
-                className="w-[10vw] object-contain border border-white object-center opacity-90"
-                src={bannerImages[0]}
+                className="w-[10vw]
+                 object-contain border border-white object-center opacity-90"
+                src={bannerImages[3]}
               />
               <Image
                 alt="banner Image"
@@ -40,15 +41,15 @@ export default function Banner(props) {
               />
             </div>
 
-            <div className="absolute shadow-white font-extrabold text-accent flex flex-col text-left justify-center px-20 items-start top-0 left-0 w-full h-full text-4xl lg:text-9xl">
+            <div className="absolute shadow-white font-extrabold text-accent flex flex-col text-left lg:justify-center lg:px-20 max-md:px-4 max-md:py-8 items-start top-0 left-0 w-full h-full text-6xl lg:text-9xl z-10">
               <p
                 style={{
-                  textShadow: `0.2rem 0.2rem 0.05rem rgb(${rgbOfAccent.r},${rgbOfAccent.g},${rgbOfAccent.b},1.0)`,
+                  textShadow: `0.3rem 0.3rem 0.05rem rgb(${rgbOfAccent.r},${rgbOfAccent.g},${rgbOfAccent.b},1.0)`,
                 }}
                 className={`text-black`}
               >
                 {title.toLocaleUpperCase().split(" ")[0]} <br />
-                <span className="text-accent [text-shadow:_0.2rem_0.2rem_0.05rem_rgb(0_0_0_/_100%)]">
+                <span className="text-accent [text-shadow:_0.3rem_0.3rem_0.05rem_rgb(0_0_0_/_100%)]">
                   {title.toLocaleUpperCase().split(" ")[1] || ""}
                 </span>
               </p>
@@ -63,7 +64,7 @@ export default function Banner(props) {
                   shopNowBannerPosition || "start"
                 }`}
               >
-                <button className="border border-gray-400 bg-black text-xl mt-6 lg:mt-16 py-2 px-6 hover:bg-accent hover:text-black duration-300 ease-in-out ">
+                <button className="border border-accent bg-black text-xl mt-6 lg:mt-16 py-2 px-6 hover:bg-accent hover:text-black duration-300 ease-in-out ">
                   Shop Now
                 </button>
               </div>

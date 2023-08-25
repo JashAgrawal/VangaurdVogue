@@ -9,7 +9,7 @@ export default function Home() {
    
       <Banner />
       <ProductsSection
-        primaryHeading="Shop by Weed"
+        primaryHeading="Shop by Anime"
         secondaryHeading="Top Collection"
       />
       <MessageBanner />

@@ -12,21 +12,23 @@ export default function ReviewMessage(props) {
       <div className="container my-2 px-4 mx-auto">
         <div className="mb-2 shadow-lg rounded-t-8xl rounded-b-5xl overflow-hidden">
           <div className="pt-3 pb-3 md:pb-1 px-4 md:px-16 rounded-t-xl border-2 border-gray-700 bg-black bg-opacity-40">
-            <div className="flex flex-wrap items-center">
+            <div className="flex max-md:flex-col items-center">
+              <div className="w-full flex items-center justify-start  max-md:border-b border-gray-900 max-md:my-2 max-md:py-2">
               <Image
                 className="mr-6 w-12 h-12 p-1 border border-accent rounded-full mb-1"
                 src={l3}
                 alt="Profile"
-              />
+                />
               <h4 className="w-full md:w-auto text-xl font-heading font-medium">
                 {props.name}
               </h4>
-              <div className="w-full md:w-px h-2 md:h-8 mx-8 bg-transparent md:bg-gray-200"></div>
+                </div>
+              {/* <div className="w-full md:w-px h-2 md:h-8 mx-8 bg-transparent md:bg-gray-200"></div> */}
+
+              <div className="inline-flex ">
               <span className="mr-4 text-xl font-heading font-medium">
                 {props.review}
               </span>
-
-              <div className="inline-flex">
                 {[1, 2, 3, 4, 5].map((rev) => (
                   <>
                     {rev <= 4 ? (
@@ -79,7 +81,7 @@ export default function ReviewMessage(props) {
                 </div>
               </div>
               <div className="w-full md:w-1/3 text-right">
-                <p className="mb-8 text-sm text-gray-300">
+                <p className="text-sm text-gray-300">
                   Added at{" "}
                   {props.date &&
                     new Date(props.date).toISOString().split("T")[0]}

@@ -14,6 +14,7 @@ import LogoWb from '@/assests/iykyk/logo.jpg'
 import banner from "@/assests/img.png"
 import banner2 from "@/assests/imgg.jpeg"
 import banner3 from "@/assests/imggg.jpeg"
+import banner4 from "@/assests/imd3.jpg"
 //*******Constants*******//
 
 export const logo = logoImg;
@@ -155,7 +156,7 @@ export const LeftNavbarTitles = [
   { title: "Categories", maproute: "/Categories/Category" },
 ];
 
-export const bannerImages = [banner, banner2, banner3];
+export const bannerImages = [banner, banner2, banner3,banner4];
 export const shopNowBannerPosition = "start";
 export const rgbOfAccent = hexToRgb(accent);
 export const ProductsSectionBackgroundImage = smoke;
