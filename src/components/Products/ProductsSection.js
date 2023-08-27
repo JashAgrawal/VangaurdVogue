@@ -12,7 +12,7 @@ export default function ProductsSection(props) {
   // const limit = screen.width >= 640 ? (props.isCategory ? 3 : 4) : 2;
   const limit = 4;
   return (
-    <div className={`flex relative w-full h-full flex-col justify-center`}>
+    <div className={`flex relative w-full h-full flex-col justify-center py-20`}>
       <div className="absolute w-full h-full top-[10%] left-0 gradient-bg bg-opacity-20" style={{top:props.secondaryHeading ? "12%" : 0}}>
       {/* <Image
         src={ProductsSectionBackgroundImage}
