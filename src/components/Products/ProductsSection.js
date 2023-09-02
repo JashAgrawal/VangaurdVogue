@@ -12,14 +12,21 @@ export default function ProductsSection(props) {
   // const limit = screen.width >= 640 ? (props.isCategory ? 3 : 4) : 2;
   const limit = 4;
   return (
-    <div className={`flex relative w-full h-full flex-col justify-center py-20`}>
-      <div className="absolute w-full h-full top-[10%] left-0 gradient-bg bg-opacity-20" style={{top:props.secondaryHeading ? "12%" : 0}}>
-      {/* <Image
+    <div
+      className={`flex relative w-full h-full flex-col justify-center lg:py-12 py-10 overflow-hidden `}
+    >
+      <div
+        className="absolute w-full h-full top-[10%] left-0 gradient-bg bg-opacity-20 topProdSect"
+        style={{
+          top: props.secondaryHeading ? "12%" : 0,
+        }}
+      >
+        {/* <Image
         src={ProductsSectionBackgroundImage}
         className="w-full h-full object-cover"
         alt="background Image"
         /> */}
-        </div>
+      </div>
       <div className={`flex lg:my-4 p-4 w-full flex-col items-center`}>
         {props.secondaryHeading !== "" && (
           <h3 className="text-lg z-20 lg:text-2xl mb-2 lg:mb-4 m-2">

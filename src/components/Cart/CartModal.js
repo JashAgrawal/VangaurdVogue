@@ -14,7 +14,9 @@ export default function Cart(props) {
 
   return (
     <div
-      className={"fixed z-[200] right-0 w-1/3 h-screen overflow-hidden"}
+      className={
+        "fixed z-[200] right-0 lg:w-1/3 w-full h-screen overflow-hidden"
+      }
       style={{ display: !open && "none" }}
     >
       <CartContent products={products} />

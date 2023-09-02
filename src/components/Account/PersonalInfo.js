@@ -22,7 +22,7 @@ export default function PersonalInfo() {
           Manage your personal Information . including phone numbers and email
           address where you can be contacted
         </p>
-        <div className="flex py-12 w-4/5 flex-wrap">
+        <div className="flex py-12 lg:w-4/5 flex-wrap max-md:justify-center">
           {details.map((detail, idx) => (
             <div key={idx} className="w-48 m-3 p-6 border rounded-xl">
               <h1 className="pb-2 border-b border-accent text-lg">

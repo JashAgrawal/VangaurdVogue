@@ -88,16 +88,15 @@ export default function ProductDescription(props) {
               </div>
               <div className="flex flex-col justify-center">
                 <span className="title-font font-medium text-5xl">$58.00</span>
-                <div className="max-md:flex max-md:space-x-4">
+                <div className="max-md:flex max-md:mt-4 max-md:space-x-4">
+                  <button className="flex mt-4 my-2 h-16 w-full justify-center items-center text-xl ease-in-out duration-200 text-white bg-accent focus:outline-none hover:bg-black hover:border-2 rounded">
+                    Buy Now
+                  </button>
 
-                <button className="flex mt-4 my-2 h-16 w-full justify-center items-center text-xl ease-in-out duration-200 text-white bg-accent focus:outline-none hover:bg-black hover:border-2 rounded">
-                  Buy Now
-                </button>
-
-                <button className="flex mt-4 my-2 h-16 w-full justify-center items-center text-xl ease-in-out duration-200 text-white  bg-accent focus:outline-none hover:bg-black hover:border-2 rounded">
-                  Add to cart
-                </button>
-                  </div>
+                  <button className="flex mt-4 my-2 h-16 w-full justify-center items-center text-xl ease-in-out duration-200 text-white  bg-accent focus:outline-none hover:bg-black hover:border-2 rounded">
+                    Add to cart
+                  </button>
+                </div>
               </div>
             </div>
           </div>

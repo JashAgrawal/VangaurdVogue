@@ -12,7 +12,9 @@ export default function App({ Component, pageProps }) {
         <SecondaryNavbar />
         <Navbar />
         <Cart />
-        <Component {...pageProps} />
+        <div className="md:pt-16 pt-8">
+          <Component {...pageProps} />
+        </div>
       </CartModalProvider>
       <Footer />
     </div>
