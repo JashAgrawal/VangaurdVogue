@@ -35,9 +35,18 @@
 
 .gradient-bg-card {
   background: linear-gradient(
-      to top,
-     rgba(0, 0, 0, 0.7) 5%,
-     transparent 50%,
-     transparent 45%
-    )
+    to top,
+    rgba(0, 0, 0, 0.7) 5%,
+    transparent 50%,
+    transparent 45%
+  );
+}
+.topProdSect {
+  top: 0;
+}
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .topProdSect {
+    top: 4% !important;
+  }
 }

@@ -4,7 +4,7 @@ import React from "react";
 
 export default function CategoryCard({ product }) {
   return (
-    <div className="lg:w-[30vw] w-[90vw] max-md:h-[50vh] h-[60vh] mb-8 relative shadow-md overflow-hidden shadow-accent bg-white border border-gray-200 rounded-xl dark:bg-black dark:border-gray-700 cursor-pointer">
+    <div className="lg:w-[30vw] w-[70vw] max-md:h-[40vh] h-[60vh] mb-8 relative shadow-md overflow-hidden shadow-accent bg-white border border-gray-200 rounded-xl dark:bg-black dark:border-gray-700 cursor-pointer">
       <Link href="/product">
         <div className="overflow-hidden w-full h-full">
           <Image

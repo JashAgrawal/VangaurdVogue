@@ -86,7 +86,7 @@ const CartContent = (props) => {
               Checkout
             </Link>
           </div>
-          <p className="w-full mt-2 text-center text-gray-500">or</p>
+          {/* <p className="w-full mt-2 text-center text-gray-500">or</p>
           <div className="mt-2 flex justify-center text-center text-sm text-gray-500">
             <button
               type="button"
@@ -96,7 +96,7 @@ const CartContent = (props) => {
               Continue Shopping
               <span aria-hidden="true"> &rarr;</span>
             </button>
-          </div>
+          </div> */}
         </div>
       </div>
     </Slide>

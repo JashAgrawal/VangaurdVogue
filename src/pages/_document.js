@@ -5,10 +5,7 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-      <meta
-          property="og:title"
-          content="Vangaurd Vogue"
-        />
+        <meta property="og:title" content="Vangaurd Vogue" />
         <meta property="og:url" content="https://vangaurd-vogue.vercel.app/" />
         <meta
           property="og:description"
@@ -23,7 +20,7 @@ export default function Document() {
         />
         <link rel="icon" type="image/x-icon" href="/char.ico" />
       </Head>
-      <body>
+      <body className="noScroll">
         <Main />
         <NextScript />
       </body>

@@ -5,8 +5,7 @@ import Review from "@/components/Home/ReviewSection";
 
 export default function Home() {
   return (
-    <>
-   
+    <div className="noScroll">
       <Banner />
       <ProductsSection
         primaryHeading="Shop by Anime"
@@ -23,6 +22,6 @@ export default function Home() {
         secondaryHeading="Top Collection"
       />
       <Review />
-    </>
+    </div>
   );
 }
