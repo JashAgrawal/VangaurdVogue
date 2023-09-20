@@ -14,10 +14,10 @@ const NavbarSearchBar = () => {
         <input
           type="text"
           placeholder="What are you looking for ?"
-          className="w-full text-white  px-2 focus:outline-none bg-black"
+          className="w-full text-black px-2 focus:outline-none placeholder:text-black bg-white "
         ></input>
-        <button className="bg-black ">
-          <BiSearchAlt className="text-gray-400" size={20} />
+        <button className="bg-white ">
+          <BiSearchAlt className="text-gray-900" size={20} />
         </button>
       </div>
     </>
@@ -26,7 +26,7 @@ const NavbarSearchBar = () => {
 export default function Navbar(props) {
   const { open, setOpen } = useCart();
   const isLogin = true;
-  const [scrollingDown, setScrollingDown] = useState(false);
+  const [scrollingDown, setScrollingDown] = useState(true);
   const [isMenuVisible, setIsMenuVisible] = useState(false);
   useEffect(() => {
     let prevScrollY = window.scrollY;
@@ -93,6 +93,10 @@ export default function Navbar(props) {
 
   return (
     <>
+    <div className={`h-16 opacity-0 ${
+          !scrollingDown ? "translate-y-[-100%]" : "translate-y-0"
+        }`} >
+    </div>
       <div
         className={`fixed top-0 left-0 w-full border-b-2 z-[100] border-t-2 border-accent ease-in-out ${
           scrollingDown ? "translate-y-[-100%]" : "translate-y-0"
@@ -101,7 +105,7 @@ export default function Navbar(props) {
         //   transform: scrollingDown ? "translateY(-100%)" : "translateY(0)",
         // }}
       >
-        <nav className="flex max-md:hidden justify-between font-navbar font-medium text-white bg-black">
+        <nav className="flex max-md:hidden justify-between font-navbar font-medium text-black bg-white">
           <div className="flex ">
             <Link href={"/"}>
               <div>

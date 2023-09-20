@@ -3,12 +3,14 @@ import Image from "next/image";
 import { messageBannerBackgroundImage } from "@/utils/constant";
 export default function MessageBanner(props) {
   return (
-    <div className="flex relative max-w-screen-xl lg:h-4/5 h-2/5 text-accent font-bold w-full items-center justify-center">
+    <div className="flex relative lg:h-4/5 h-2/5 text-accent font-bold w-full items-center justify-center overflow-hidden">
+      <div className="top-0 left-0 absolute w-full h-full flex justify-center items-center">
       <Image
         src={messageBannerBackgroundImage}
-        className="w-full h-full absolute object-cover object-center top-0 left-0"
+        className="w-full h-full object-cover object-center"
         alt="banner Background Image"
-      />
+        />
+        </div>
       <div className="flex flex-col w-full h-full p-2 lg:my-20 my-6 justify-center items-center z-10">
         <h3 className="bg-black p-4 lg:text-3xl text-lg">ONGOING OFFER</h3>
         <div className="m-4 lg:text-4xl text-lg lg:mb-8 mb-3 flex flex-col justify-center items-center">

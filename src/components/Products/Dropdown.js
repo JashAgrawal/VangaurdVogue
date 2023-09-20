@@ -8,7 +8,7 @@ export default function Dropdown(props) {
         onClick={() => {
           setOpen(!open);
         }}
-        className={`border-2 font-bold p-4 ${open && "bg-accent text-black"}`}
+        className={`border-2 border-black font-bold p-4 ${open && "bg-accent text-black"}`}
       >
         {props.text}
       </div>

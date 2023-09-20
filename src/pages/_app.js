@@ -7,12 +7,12 @@ import { CartModalProvider } from "@/context/cartModel";
 
 export default function App({ Component, pageProps }) {
   return (
-    <div className="flex noScroll bg-black text-white font-navbar flex-col justify-start">
+    <div className="flex noScroll bg-white text-black font-navbar flex-col justify-start">
       <CartModalProvider>
-        <SecondaryNavbar />
+        {/* <SecondaryNavbar /> */}
         <Navbar />
         <Cart />
-        <div className="md:pt-16 pt-8">
+        <div className="">
           <Component {...pageProps} />
         </div>
       </CartModalProvider>

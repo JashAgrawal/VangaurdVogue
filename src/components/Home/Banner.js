@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import {
   bannerImages,
+  mobileShopNowBannerPosition,
   rgbOfAccent,
   shopNowBannerPosition,
   title,
@@ -19,29 +20,20 @@ export default function Banner(props) {
         showIndicators={false}
         showStatus={false}
         showThumbs={false}
+        showArrows={false}
+        
       >
         {bannerImages.map((image, idx) => (
-          <div className="relative w-full h-full bg-[#0e0e0f]" key={idx}>
-            <div className="flex w-full lg:h-[85vh] h-[35vh] justify-between items-center">
+          <div className="relative w-full h-full bg-gray-400" key={idx}>
+            <div className="flex w-full lg:h-[99.99vh] h-[90vh] justify-between items-center">
               <Image
                 alt="banner Image"
-                className="w-[10vw]
-                 object-contain border border-white object-center opacity-90"
+                className="w-full h-full object-cover object-center opacity-90"
                 src={bannerImages[3]}
-              />
-              <Image
-                alt="banner Image"
-                className="w-[10vw] object-contain  object-center opacity-90"
-                src={bannerImages[2]}
-              />
-              <Image
-                alt="banner Image"
-                className="w-[10vw] object-contain  object-center opacity-90"
-                src={bannerImages[1]}
               />
             </div>
 
-            <div className="absolute shadow-white font-extrabold text-accent flex flex-col text-left lg:justify-center lg:px-20 max-md:px-4 max-md:py-8 items-start top-0 left-0 w-full h-full text-6xl lg:text-9xl z-10">
+            <div className="absolute font-extrabold text-accent flex flex-col text-left lg:justify-center justify-between lg:items-start items-center lg:px-20 max-md:px-4 max-md:py-8  top-0 left-0 w-full h-full text-6xl lg:text-9xl z-10 max-md:pb-20">
               <p
                 style={{
                   textShadow: `0.3rem 0.3rem 0.05rem rgb(${rgbOfAccent.r},${rgbOfAccent.g},${rgbOfAccent.b},1.0)`,
@@ -60,7 +52,9 @@ export default function Banner(props) {
                 Bros
               </span> */}
               <div
-                className={`w-full flex justify-${
+                className={`w-full flex max-md:justify-${
+                  mobileShopNowBannerPosition || "start"
+                } justify-${
                   shopNowBannerPosition || "start"
                 }`}
               >

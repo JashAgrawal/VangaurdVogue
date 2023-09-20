@@ -16,7 +16,7 @@ export default function FiltersSection() {
   };
   return (
     <div className="w-[22rem] max-md:hidden pl-1 [&>*]:m-2 text-center text-4xl">
-      <h1 className="text-6xl border-y-4 border-accent pb-2 bg-black text-accent">
+      <h1 className="text-6xl border-y-4 border-accent pb-2 bg-white text-accent">
         Fliters
       </h1>
       <Dropdown text={"Availblity"}>

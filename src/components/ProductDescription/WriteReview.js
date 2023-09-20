@@ -13,7 +13,7 @@ export default function WriteReview(props) {
       {/* <section className="py-24 border 2xl:py-44 bg-blueGray-100 rounded-t-10xl overflow-hidden"> */}
       <div className="container my-2 px-4 mx-auto">
         <div className="mb-2 shadow-lg rounded-t-8xl rounded-b-5xl overflow-hidden">
-          <div className="pt-3 pb-3 md:pb-1 px-4 md:px-16 rounded-t-xl border-2 border-gray-700 bg-black bg-opacity-40">
+          <div className="pt-3 pb-3 md:pb-1 px-4 md:px-16 rounded-t-xl border-2 border-gray-700 bg-white bg-opacity-40">
             <div className="flex max-md:flex-col items-center">
               <div className="w-full flex items-center justify-start max-md:border-b border-gray-900 max-md:my-2 max-md:py-2">
               <Image
@@ -48,7 +48,7 @@ export default function WriteReview(props) {
               </div>
             </div>
           </div>
-          <div className="px-4 overflow-hidden rounded-b-xl md:px-16 border-2 border-gray-700 pt-8 pb-12 bg-black">
+          <div className="px-4 overflow-hidden rounded-b-xl md:px-16 border-2 border-gray-700 pt-8 pb-12 bg-white">
             <div className="flex flex-wrap">
               <div className="w-full md:w-2/3 mb-6 md:mb-0">
                 <div className="mb-8 max-w-2xl text-white-400 leading-loose">
@@ -56,7 +56,7 @@ export default function WriteReview(props) {
                     value={review}
                     onChange={(e) => setReview(e.target.value)}
                     placeholder="Write What You Think About the Product ......."
-                    className="w-full border-b h-full bg-black focus:outline-none"
+                    className="w-full border-b h-full bg-white focus:outline-none"
                   ></textarea>
                 </div>
                 <div>

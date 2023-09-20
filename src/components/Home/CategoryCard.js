@@ -15,7 +15,7 @@ export default function CategoryCard({ product }) {
         </div>
       </Link>
       <div className="flex w-full justify-center absolute lg:bottom-6 bottom-1 px-4 py-2 ">
-        <h1 className="lg:text-xl text-sm bg-black bg-opacity-70 px-4 py-2 border-2 border-accent">
+        <h1 className="lg:text-xl text-sm bg-black bg-opacity-70 px-4 py-2 border-2 border-accent text-white">
           {product.name}
         </h1>
       </div>

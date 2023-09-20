@@ -11,7 +11,7 @@ export default function ReviewMessage(props) {
       {/* <section className="py-24 border 2xl:py-44 bg-blueGray-100 rounded-t-10xl overflow-hidden"> */}
       <div className="container my-2 px-4 mx-auto">
         <div className="mb-2 shadow-lg rounded-t-8xl rounded-b-5xl overflow-hidden">
-          <div className="pt-3 pb-3 md:pb-1 px-4 md:px-16 rounded-t-xl border-2 border-gray-700 bg-black bg-opacity-40">
+          <div className="pt-3 pb-3 md:pb-1  px-4 md:px-16 rounded-t-xl border-2 border-gray-700 bg-white bg-opacity-40">
             <div className="flex max-md:flex-col items-center">
               <div className="w-full flex items-center justify-start  max-md:border-b border-gray-900 max-md:my-2 max-md:py-2">
               <Image

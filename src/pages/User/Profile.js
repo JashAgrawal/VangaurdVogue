@@ -44,7 +44,7 @@ export default function Profile() {
             <h1 className="text-3xl max-md:hidden">Jash Agrawal</h1>
             <div
               className={`lg:w-48 text-center font-bold p-6 border-2 max-md:mx-2 rounded-xl ${
-                active === 1 && "bg-black border-accent"
+                active === 1 && "bg-white border-accent text-accent"
               }`}
               onClick={() => setActive(1)}
             >
@@ -52,7 +52,7 @@ export default function Profile() {
             </div>
             <div
               className={`lg:w-48 text-center font-bold p-6 border-2 max-md:mx-2 rounded-xl ${
-                active === 2 && "bg-black border-accent"
+                active === 2 && "bg-white border-accent text-accent"
               }`}
               onClick={() => setActive(2)}
             >

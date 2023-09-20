@@ -13,7 +13,7 @@ import bb from "@/assests/d.jpeg";
 import LogoWb from '@/assests/iykyk/logo.jpg'
 import banner from "@/assests/img.png"
 import banner2 from "@/assests/imgg.jpeg"
-import banner3 from "@/assests/imggg.jpeg"
+import banner3 from "@/assests/goku-super.gif"
 import banner4 from "@/assests/imd3.jpg"
 //*******Constants*******//
 
@@ -156,8 +156,9 @@ export const LeftNavbarTitles = [
   { title: "Categories", maproute: "/Categories/Category" },
 ];
 
-export const bannerImages = [banner, banner2, banner3,banner4];
-export const shopNowBannerPosition = "start";
+export const bannerImages = [banner3, banner3, banner3,banner3];
+export const mobileShopNowBannerPosition = "center";
+export const ShopNowBannerPosition = "start";
 export const rgbOfAccent = hexToRgb(accent);
 export const ProductsSectionBackgroundImage = smoke;
 // export const accent = "#499b4a";
